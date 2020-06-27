@@ -1,5 +1,5 @@
-keep_going = True
-while keep_going:
+keep_going = True#boolean statement that we use for the outermost while loop
+while keep_going:# the outermost while loop keeps going as long as "keep_going" boolean is true
     entry = False# this establishes a boolean for entry
     while not entry:# this runs the loop repeatedly as long as entry is false
         op = input("Select your operation" + "\n" "m = multiply" + "\n" +
@@ -24,6 +24,6 @@ while keep_going:
 
     user2 = input("Do you want to do another operation? (y/n): ")
     if user2 == "y":
-        keep_going = True
+        keep_going = True# if the user types "y", it restarts the loop from the beginning
     else:
-        keep_going = False
+        keep_going = False#if the user types "n" the program terminates
